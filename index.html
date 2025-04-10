@@ -11,8 +11,23 @@
       background: #121212;
       color: #f0f0f0;
     }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      margin-left: 1em;
+      color: #00bfff;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
     h1 {
       color: #ffffff;
+      margin-top: 0.5em;
     }
     label {
       display: block;
@@ -60,7 +75,15 @@
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="Logo" class="logo">
+  <header>
+    <img src="logo.png" alt="Logo" class="logo">
+    <nav>
+      <a href="https://website.beacons.ai/bighossracing/websites/live/5daeba22-9e33-4b8e-ad3a-52e31ade08c2" target="_blank">About</a>
+      <a href="https://payhip.com/HossBuilt" target="_blank">Shop</a>
+      <a href="https://payhip.com/HossBuilt/contact" target="_blank">Contact</a>
+    </nav>
+  </header>
+
   <h1>Gear Ratio Calculator</h1>
   <label>Desired RPM:
     <input type="number" id="desiredRPM">
@@ -134,4 +157,3 @@
   </script>
 </body>
 </html>
-
