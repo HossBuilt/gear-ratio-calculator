@@ -72,6 +72,11 @@
       border: 1px solid #444;
       text-align: center;
     }
+    .highlight {
+      background-color: #2e7d32;
+      color: #ffffff;
+      font-weight: bold;
+    }
     img.logo {
       max-width: 150px;
       height: auto;
@@ -153,7 +158,8 @@
       let html = `<p>Current Ratio: ${currentRatio.toFixed(2)}<br>Target Ratio: ${newRatio.toFixed(2)}</p>`;
       html += '<table><tr><th>Engine</th><th>Axle</th><th>Ratio</th></tr>';
       matches.forEach(m => {
-        html += `<tr><td>${m.engine}</td><td>${m.axle}</td><td>${m.ratio.toFixed(2)}</td></tr>`;
+        const highlightClass = m.ratio.toFixed(2) == newRatio.toFixed(2) ? ' class="highlight"' : '';
+        html += `<tr${highlightClass}><td>${m.engine}</td><td>${m.axle}</td><td>${m.ratio.toFixed(2)}</td></tr>`;
       });
       html += '</table>';
       document.getElementById('results').innerHTML = html;
