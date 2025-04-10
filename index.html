@@ -8,10 +8,11 @@
     body {
       font-family: sans-serif;
       padding: 1em;
-      background: #f4f4f4;
+      background: #121212;
+      color: #f0f0f0;
     }
     h1 {
-      color: #333;
+      color: #ffffff;
     }
     label {
       display: block;
@@ -22,31 +23,44 @@
       width: 100%;
       max-width: 300px;
       margin-top: 0.2em;
+      background: #1e1e1e;
+      border: 1px solid #555;
+      color: #f0f0f0;
     }
     button {
       margin-top: 1em;
       padding: 0.5em 1em;
       font-size: 1em;
+      background-color: #333;
+      color: #f0f0f0;
+      border: 1px solid #555;
     }
     .results {
       margin-top: 2em;
       padding: 1em;
-      background: white;
-      border: 1px solid #ccc;
+      background: #1e1e1e;
+      border: 1px solid #444;
     }
     table {
       margin-top: 1em;
       border-collapse: collapse;
       width: 100%;
+      color: #f0f0f0;
     }
     th, td {
       padding: 0.5em;
-      border: 1px solid #ccc;
+      border: 1px solid #444;
       text-align: center;
+    }
+    img.logo {
+      max-width: 200px;
+      display: block;
+      margin-bottom: 1em;
     }
   </style>
 </head>
 <body>
+  <img src="logo.png" alt="Logo" class="logo">
   <h1>Gear Ratio Calculator</h1>
   <label>Desired RPM:
     <input type="number" id="desiredRPM">
@@ -120,3 +134,4 @@
   </script>
 </body>
 </html>
+
