@@ -1,7 +1,7 @@
 {
   "name": "Honda Gear Ratio Calculator",
   "short_name": "HondaGearCalc",
-  "start_url": "./index.html",
+  "start_url": "./honda.html",
   "display": "standalone",
   "background_color": "#121212",
   "theme_color": "#121212",
